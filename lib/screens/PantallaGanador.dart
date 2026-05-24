@@ -75,7 +75,7 @@ class _PantallaGanadorState extends State<PantallaGanador> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
-                        '¡Tenemos un ganador!',
+                        '¡Tenemos un ganador!', // Ganaste!!!
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -135,7 +135,7 @@ class _PantallaGanadorState extends State<PantallaGanador> {
                             elevation: 0,
                           ),
                           child: const Text(
-                            'Girar de nuevo',
+                            'Girar de nuevo', // Mensaje que aparece al finalizar una girada
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -159,7 +159,7 @@ class _PantallaGanadorState extends State<PantallaGanador> {
                             elevation: 0,
                           ),
                           child: const Text(
-                            'Volver a configuración',
+                            'Volver a configuración', // Mensaje para irse a las configuraciones
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
