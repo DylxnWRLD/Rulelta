@@ -1,6 +1,6 @@
 # ruleta
 
-A new Flutter project.
+Aplicación de flutter que busca simular la funcionalidad de una Ruleta, donde el usuario ingresa un numero de entradas y la aplicación se encarga de seleccionar aleatoriamente una de ellas.
 
 ## Getting Started
 
