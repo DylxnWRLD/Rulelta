@@ -5,7 +5,6 @@ class PantallaGanador extends StatefulWidget {
   final String winner;
   final List<String> allOptions;
 
-  // El constructor recibe el ganador seleccionado y la lista completa de opciones
   const PantallaGanador({
     super.key, 
     required this.winner, 

@@ -20,16 +20,11 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
       body: SafeArea(
         child: Column(
           children: [
-            // --- 1. ENCABEZADO (Flecha de atrás y Título) ---
+            // Encabezado con el título
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
               child: Row(
                 children: [
-                  IconButton(
-                    icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black, size: 28),
-                    onPressed: () {
-                    },
-                  ),
                   const Expanded(
                     child: Text(
                       'RULETITA',
@@ -47,7 +42,7 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
               ),
             ),
 
-            // --- 2. TARJETA BLANCA REDONDEADA (Cubre el resto de la pantalla) ---
+            // Tarjeta blanca redondeada
             Expanded(
               child: Container(
                 width: double.infinity,
@@ -73,7 +68,7 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
                       ),
                       const SizedBox(height: 16),
 
-                      // --- 3. INPUT TEXT Y BOTÓN "AÑADIR" ---
+                      // Texto y botón de "Añadir"
                       Row(
                         children: [
                           Expanded(
@@ -120,7 +115,7 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
                       ),
                       const SizedBox(height: 20),
 
-                      // --- 4. LISTA DINÁMICA DE OPCIONES ---
+                      // Lista de las opciones añadidas
                       Expanded(
                         child: options.isEmpty
                             ? Center(
@@ -169,7 +164,7 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
                               ),
                       ),
 
-                      // --- 5. BOTÓN PRINCIPAL (¡Gira la ruleta!) ---
+                      // Botón para girar la ruleta
                       const SizedBox(height: 16),
                       Center(
                         child: SizedBox(
@@ -179,7 +174,6 @@ class _PantallaSeleccionState extends State<PantallaSeleccion> {
                             onPressed: () {
                               if (options.length >= 2) {
                                 final randomOption = options[Random().nextInt(options.length)];
-                                
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
