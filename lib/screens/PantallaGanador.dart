@@ -136,7 +136,8 @@ class _PantallaGanadorState extends State<PantallaGanador> {
                           ),
                           child: const Text(
                             'Girar de nuevo', // Mensaje que aparece al finalizar una girada
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white,),
+                          
                           ),
                         ),
                       ),
